@@ -1,0 +1,169 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(fonts/Norse-Bold.otf) format('opentype');
+}
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    font-family: Roboto, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+body {
+    display: flex; 
+    background-color: #f9fafb; 
+} 
+
+.right div p {
+    width: 65%;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-left: 1.875rem;
+}
+
+.right div p:first-child {
+    margin-top: 5rem;
+}
+
+.right div p:last-child {
+    margin-bottom: 3.125rem;
+}
+
+.left {
+   width: 35%;
+} 
+
+.right {
+    width: 65%;
+    padding: 0.3125rem;
+}
+
+#form {
+    margin: 1.25rem 0;
+    background-color: white;
+    box-shadow: 0 0.25rem 0.0625rem #e3e4e5;
+    outline: red;
+}
+
+form p {
+    height: 33%;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding-top: 0.9375rem;
+    margin-left: 1.875rem;
+}
+
+.form-inputs {
+    height: 33vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 1.875rem;
+    text-transform: uppercase;
+    font-size: 0.625rem;
+    font-weight: bold;
+    letter-spacing: 0.125rem;
+}
+
+input {
+    display: block;
+    border: 0.0625rem solid #e5e7eb;
+    border-radius: 0.3125rem;
+    width: 18.75rem;
+    height: 1.875rem;
+}
+
+input:focus {
+    outline: none;
+    border: 0.125rem solid #2c5ada;
+    box-shadow: 0.0625rem 0.0625rem black;
+}
+
+.error:invalid {
+    outline: none;
+    border: 0.125rem solid red;
+    box-shadow: 0.0625rem 0.0625rem black;
+}
+
+label {
+    display:block;
+    margin: 1.25rem 0.3125rem 0 0;
+}
+
+.btn {
+    display: block;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: bold;
+    background-color: #596d48;
+    width: 12.5rem;
+    height: 3.125rem;
+    border-radius: 0.625rem;
+    border: 0.0625rem solid #596d48;
+    margin: 1.875rem 0 1.875rem 1.875rem;
+}
+
+small {
+    font-size: 1rem;
+    margin-left: 1.875rem;
+}
+
+small a {
+    color: #596d48;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+img {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh; 
+}
+
+figure {
+    padding: 0;
+    margin: 0;
+}
+
+figcaption {
+    margin: 0 auto;
+    color: white;
+    font-size: 0.875rem;
+    margin-left: 8.125rem;
+    padding: 0.3125rem;
+    position: absolute;
+    bottom: 0;
+}
+
+figcaption a:visited {
+    color: white;
+}
+
+.black-background {
+    width: 30.625rem;
+    height: 8.125rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    top: 0;
+    margin-top: 11.25rem;
+}
+
+.logo-text {
+    font-family: 'Norse-Bold', sans-serif;
+    font-size: 5rem;
+    color: white;
+} 
+
+.logo-pic {
+    width: 5rem;
+    height: 6.875rem;
+}

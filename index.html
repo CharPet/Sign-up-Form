@@ -5,57 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
-        <div>
+    <aside class="left">
+        <figure>
+
+            <img src="images/halie-west-25xggax4bSA-unsplash.jpg" alt="Greenary">
+
+            <figcaption>
+                Photo by 
+                <a href="https://haliewestphotography.com/">Halie West</a> on 
+                <a href="https://unsplash.com/@haliewestphoto">Unsplash</a> 
+            </figcaption>
+
+        </figure>
+
+         <div class="black-background">
+            <img src="logos/odin-lined.png" alt="logo" class="logo-pic">
+            <p class="logo-text">ODIN</p>
+         </div>
+        
+    </aside>
+
+    <main class="right">
+        <div >
             <p>This is not a real online service! You know you need something like tin your life
-                to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+                to help you realize your deepest dreams.<br>Sign up <em>now</em> to get started.</p>
             
             <p>You <em>know</em> you want to.</p>
         </div>
 
-        <form action="submit" method="post">
+        <form action="submit" method="post" id="form">
 
             <p>Let's do this!</p>
 
-            <label for="fname">First name:</label>
-            <input type="text" id="fname" name="fname">
+            <div class="form-inputs">
+                <label for="fname">First name</label>
+                <input type="text" id="fname" name="fname">
 
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email">
 
-            <label for="pwd">Password:</label>
-            <input type="password" id="pwd" name="pwd">
+                <label for="pwd">Password</label>
+                <input type="password" id="pwd" name="pwd" class="error">
 
-            <label for="lname">Last name:</label>
-            <input type="text" id="lname" name="lname">
+                <label for="lname">Last name</label>
+                <input type="text" id="lname" name="lname">
 
-            <label for="pnumber">Phone number</label>
-            <input type="tel" id="pnumber" name="pnumber">
+                <label for="pnumber">Phone number</label>
+                <input type="tel" id="pnumber" name="pnumber">
 
-            <label for="pwdc">Password Confimation:</label>
-            <input type="password" id="pwdc" name="pwdc">
+                <label for="pwdc">COnfirm Password</label>
+                <input type="password" id="pwdc" name="pwdc" class="error">
+            </div>
         </form>
 
         <div>
-            <button input="submit">Create Account</button>
+            <button type="submit" class="btn">Create Account</button>
 
             <small>Already have an account? <a href="">Log in</a></small>
         </div>
 
     </main>
 
-    <aside>
-            <figure>
-                <img src="images/halie-west-25xggax4bSA-unsplash.jpg" alt="Greenary">
-                <figcaption>Photo by <a href="https://haliewestphotography.com/">Halie West</a> 
-                    on <a href="https://unsplash.com/@haliewestphoto">Unsplash</a> 
-                </figcaption>
-            </figure>
-            
-            <div></div>
-            
-    </aside>
+    
 </body>
 </html>
+
+
