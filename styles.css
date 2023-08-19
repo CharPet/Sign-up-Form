@@ -73,18 +73,18 @@ input {
     border: 0.0625rem solid #e5e7eb;
     border-radius: 0.3125rem;
     width: 18.75rem;
-    height: 1.875rem;
+    height: 2rem;
 }
 
 input:focus {
     outline: none;
-    border: 0.125rem solid #2c5ada;
+    border: 0.1rem solid #2c5ada;
     box-shadow: 0.0625rem 0.0625rem black;
 }
 
 .error:invalid {
     outline: none;
-    border: 0.125rem solid red;
+    border: 0.1rem solid red;
     box-shadow: 0.0625rem 0.0625rem black;
 }
 
@@ -104,6 +104,13 @@ label {
     border-radius: 0.625rem;
     border: 0.0625rem solid #596d48;
     margin: 1.875rem 0 1.875rem 1.875rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btn:active {
+    transform: scale(0.95);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, .24);
 }
 
 small {
@@ -167,3 +174,18 @@ figcaption a:visited {
     width: 5rem;
     height: 6.875rem;
 }
+
+#error-message {
+    color: red;
+    font-size: 10px;
+    text-transform: none;
+    margin: 1px;
+}
+
+
+
+
+
+
+
+

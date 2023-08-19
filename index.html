@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <aside class="left">
@@ -44,34 +45,35 @@
 
             <div class="form-inputs">
                 <label for="fname">First name</label>
-                <input type="text" id="fname" name="fname">
+                <input type="text" id="fname" name="fname" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
 
                 <label for="email">E-mail</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" required>
 
                 <label for="pwd">Password</label>
-                <input type="password" id="pwd" name="pwd" class="error">
+                <input type="password" id="pwd" name="pwd" class="error" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+                <div id="error-message"></div>
 
                 <label for="lname">Last name</label>
-                <input type="text" id="lname" name="lname">
+                <input type="text" id="lname" name="lname" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
 
                 <label for="pnumber">Phone number</label>
-                <input type="tel" id="pnumber" name="pnumber">
+                <input type="tel" id="pnumber" name="pnumber" required pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}">
 
-                <label for="pwdc">COnfirm Password</label>
-                <input type="password" id="pwdc" name="pwdc" class="error">
+                <label for="pwdc">Confirm Password</label>
+                <input type="password" id="pwdc" name="pwdc" class="error" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
             </div>
         </form>
 
         <div>
-            <button type="submit" class="btn">Create Account</button>
+            <button type="submit" class="btn pressed">Create Account</button>
 
             <small>Already have an account? <a href="">Log in</a></small>
         </div>
 
     </main>
 
-    
+    <script src="script.js" defer></script>
 </body>
 </html>
 
