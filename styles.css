@@ -157,6 +157,10 @@ figcaption {
     padding: 1.25rem; 
 }
 
+figcaption a {
+    color: white;
+}
+
 figcaption a:visited {
     color: white;
 }
